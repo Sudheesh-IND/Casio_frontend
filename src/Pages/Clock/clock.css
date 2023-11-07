@@ -1,0 +1,11 @@
+
+.clock-caro{
+    width: 100%;
+    height: 500px;
+    background: url(https://www.casio.com/content/casio/locales/in/en/products/watches/casio/clock/_jcr_content/root/responsivegrid/teaser.casiocoreimg.jpeg/1661234203413/clock-.jpeg);
+    background-size: cover;
+}
+.clock-products{
+    min-height: 100vh;
+    max-height: 100%;
+}

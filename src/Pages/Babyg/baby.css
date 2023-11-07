@@ -1,0 +1,11 @@
+
+.baby-caro{
+    width: 100%;
+    height: 80vh;
+    background: url(https://www.casio.com/content/casio/locales/in/en/products/watches/babyg/_jcr_content/root/responsivegrid/teaser_413363908.casiocoreimg.jpeg/1677484650323/bgd-565-hero-pc.jpeg);
+    background-size: cover;
+}
+.baby-products{
+    min-height: 100vh;
+    max-height: 100%;
+}

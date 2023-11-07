@@ -1,0 +1,12 @@
+
+.casio-caro{
+    width: 100%;
+    height: 90vh;
+    background: url(https://www.casio.com/content/casio/locales/in/en/products/watches/casio/standard/_jcr_content/root/responsivegrid/teaser.casiocoreimg.jpeg/1667525323989/banner-vintage-pc.jpeg);
+    background-size: cover;
+    
+}
+.casio-products{
+    min-height: 100vh;
+    max-height: 100%;
+}

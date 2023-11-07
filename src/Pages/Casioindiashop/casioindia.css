@@ -1,0 +1,106 @@
+
+.img-portion{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.detail-portion{
+    padding: 100px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    text-align: start;
+    justify-content: center;
+    flex-direction: column;
+}
+.buy-btn{
+    margin-top: 20px;
+    font-size: 12px;
+    height: 50px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    border: 0;
+    outline: 0;
+    background-color: black;
+    color: white;
+    
+}
+.buy-btn:hover{
+    background-color: rgba(0, 0, 0, 0.813);
+    color: white;
+}
+.fav-btn{
+    margin-top: 20px;
+    font-size: 12px;
+    height: 50px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    outline: 0.5px solid rgb(128, 128, 128);
+    border: 0;
+    background-color: white;
+}
+.fav-btn:hover{
+    outline: 2px solid black;
+}
+.detail-portion h2{
+    font-weight: 800;
+    color: black;
+    font-size: 3rem;
+    letter-spacing: 3px;
+}
+.detail-portion h6{
+    font-weight: 600;
+    color: black;
+}
+.detail-portion p{
+    font-size: 12px;
+    color: black;
+}
+.detail-portion h4{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.login-part{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+  
+}
+.form-part{
+    width: 100%;
+  
+    outline: 0.5px solid black;
+    padding: 50px;
+    display: flex;
+    text-align: start;
+    justify-content: center;
+    flex-direction: column;
+}
+input{
+    height: 50px;
+}
+.form-part h4{
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 900;
+    color: black;
+    font-size: 1.3rem;
+}
+.cart-products{
+   min-height: 250px;
+   max-height: 100%;
+   outline: 0.5px solid gray;
+}
+.cart-image{
+    padding: 20px;
+}
+.cart-products img{
+    height: 200px;
+}

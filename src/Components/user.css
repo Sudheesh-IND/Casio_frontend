@@ -1,0 +1,76 @@
+
+/* on front page */
+
+.user-head{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: bold;
+}
+.user-caro-1-gill{
+    height: 100vh;
+    width: 100%;
+    background: url(https://www.casio.com/content/casio/locales/in/en/products/watches/_jcr_content/root/responsivegrid/teaser.casiocoreimg.jpeg/1697790501774/main-banner-new.jpeg);
+    background-size: cover;
+    
+   
+}
+.user-head-casio1 a{
+
+
+    margin: 10px;
+    font-size: 13px;
+    color: black;
+    font-weight: 500;
+    margin-left: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.user-head-casio1 a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.user-head-casio1{
+    position: sticky;
+    top: 0;
+}
+
+/* card design */
+.card-portion{
+    display: flex;
+    margin-top: 80px;
+
+}
+.card{
+  width: 300px;
+  margin: 5px;
+}
+.cmpny-name{
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 18px;
+    color: black;
+}
+.model-name{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+    margin-top: 5px;
+}
+.mrp-tag{
+    font-size: 10px;
+    margin-top: 20px;
+    color: black;
+}
+.price-tag{
+    font-size: 13px;
+    color: black;
+    font-weight: 700;
+
+}
+.card-img{
+    background-color: rgb(248, 248, 248);
+}
+.card:hover{
+    outline: 1px solid black;
+}
