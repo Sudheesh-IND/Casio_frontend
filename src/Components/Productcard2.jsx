@@ -1,15 +1,15 @@
 import React from 'react'
 import {
-  MDBCard,
-  MDBCardBody,
-  MDBCardTitle,
-  MDBCardText,
-  MDBCardImage,
-  MDBBtn
-} from 'mdb-react-ui-kit';
-import { Link } from 'react-router-dom';
+    MDBCard,
+    MDBCardBody,
+    MDBCardTitle,
+    MDBCardText,
+    MDBCardImage,
+    MDBBtn
+  } from 'mdb-react-ui-kit';
+  import { Link } from 'react-router-dom';
 
-function Productcard({product}) {
+function Productcard2({product}) {
   return (
     <div>
      <div className="container card-portion">
@@ -18,7 +18,7 @@ function Productcard({product}) {
      <div className="d-flex flex-col flex-wrap " style={{justifyContent:'flex-start'}}>
      {
       product.length>0? product.map((item)=>(
-        <Link to={`/viewproduct/${item._id}`}>
+        <Link to={`/viewproduct/${item.productId}`}>
         <MDBCard className='card shadow-0 border-none' style={{borderRadius:'0'}}>
         <MDBCardImage className='card-img border-none' style={{borderRadius:'0'}} src={item.imageUrl} position='top' alt='...' />
         <MDBCardBody>
@@ -42,4 +42,4 @@ function Productcard({product}) {
   )
 }
 
-export default Productcard
+export default Productcard2

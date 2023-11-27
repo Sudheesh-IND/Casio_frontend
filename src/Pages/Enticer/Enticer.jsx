@@ -1,10 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Userheader from '../../Components/Userheader'
 import Enticercarousel from './Enticercarousel'
 import Userheader2 from '../../Components/Userheader2'
 import Productcard from '../../Components/Productcard'
+import { byBrand } from '../../Services/Api'
+
 
 function Enticer() {
+
+  const [products,setProducts]=useState([])
+
+  const getProduct=async()=>{
+    
+    const {data}=await byBrand("Enticer")
+    setProducts(data)
+
+  }
+  useEffect(()=>{
+    getProduct()
+  },[])
   return (
     <div>
       <div>
@@ -17,7 +31,7 @@ function Enticer() {
          <Userheader2/>
       </div>
       <div className="enticer-products">
-        <Productcard/>
+        <Productcard product={products}/>
       </div>
     </div>
   )

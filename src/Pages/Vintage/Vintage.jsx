@@ -1,11 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './vintage.css'
 import Userheader from '../../Components/Userheader'
 import Vintagecarousel from './Vintagecarousel'
 import Userheader2 from '../../Components/Userheader2'
 import Productcard from '../../Components/Productcard'
+import { byBrand } from '../../Services/Api'
+
 
 function Vintage() {
+  const [products,setProducts]=useState([])
+
+  const getProduct=async()=>{
+    
+    const {data}=await byBrand("Vintage")
+    setProducts(data)
+
+  }
+  useEffect(()=>{
+    getProduct()
+  },[])
   return (
     <div>
       <div>
@@ -18,7 +31,7 @@ function Vintage() {
         <Userheader2/>
       </div>
       <div className="vintage-products">
-        <Productcard/>
+        <Productcard product={products}/>
       </div>
     </div>
   )

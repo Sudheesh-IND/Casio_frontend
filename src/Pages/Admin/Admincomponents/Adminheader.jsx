@@ -1,17 +1,15 @@
-
 import React from 'react'
 import {
-  MDBContainer,
-  MDBNavbar,
-  MDBNavbarBrand
-} from 'mdb-react-ui-kit';
-import './user.css'
+    MDBContainer,
+    MDBNavbar,
+    MDBNavbarBrand
+  } from 'mdb-react-ui-kit';
+  import './admincomponents.css'
 
-function Userheader() {
+function Adminheader() {
   return (
     <div>
-
-      <MDBNavbar light bgColor='light' className='shadow-0'>
+        <MDBNavbar light bgColor='light' className='shadow-0'>
         <MDBContainer>
           <MDBNavbarBrand href='/'>
             <img
@@ -21,21 +19,17 @@ function Userheader() {
               loading='lazy'
             />
           </MDBNavbarBrand>
-          <div className="m-auto d-flex flex-row mt-4 user-head">
+          {/* <div className="m-auto d-flex flex-row mt-4 user-head">
             <p style={{color:'black'}}>Watches</p> <br />
             <p style={{color:'black'}} className='ms-5'>Electronic and musical instruments </p> <br />
             <p style={{color:'black'}} className='ms-5'>Calculators</p> <br />
 
-          </div>
-          <div className='ms-auto'>
-
-             <span><i class="fa-regular fa-heart"></i></span>
-          </div>
+          </div> */}
+        
         </MDBContainer>
       </MDBNavbar>
-        
     </div>
   )
 }
 
-export default Userheader
+export default Adminheader

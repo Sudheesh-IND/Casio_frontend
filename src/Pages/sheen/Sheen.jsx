@@ -1,11 +1,25 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Sheenheader from './Sheenheader'
 import Sheencarousel from './Sheencarousel'
 import Userheader2 from '../../Components/Userheader2'
 import './sheen.css'
 import Productcard from '../../Components/Productcard'
+import { byBrand } from '../../Services/Api'
+
+
 
 function Sheen() {
+  const [products,setProducts]=useState([])
+
+  const getProduct=async()=>{
+    
+    const {data}=await byBrand("Sheen")
+    setProducts(data)
+
+  }
+  useEffect(()=>{
+    getProduct()
+  },[])
   return (
     <div>
       <div>
@@ -18,7 +32,7 @@ function Sheen() {
         <Userheader2/>
       </div>
       <div className="sheen-products">
-        <Productcard/>
+        <Productcard product={products}/>
       </div>
     </div>
   )

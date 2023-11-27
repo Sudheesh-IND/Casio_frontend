@@ -1,11 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Userheader from '../../Components/Userheader'
 import Clockcarousel from './Clockcarousel'
 import Userheader2 from '../../Components/Userheader2'
 import './clock.css'
 import Productcard from '../../Components/Productcard'
+import { byBrand } from '../../Services/Api'
+
 
 function Clock() {
+
+  const [products,setProducts]=useState([])
+
+  const getProduct=async()=>{
+    
+    const {data}=await byBrand("Clock")
+    setProducts(data)
+
+  }
+  useEffect(()=>{
+    getProduct()
+  },[])
+
   return (
     <div>
       <div>
@@ -18,7 +33,7 @@ function Clock() {
          <Userheader2/>  
       </div>
       <div className="clock-products">
-        <Productcard/>
+        <Productcard product={products}/>
       </div>
     </div>
   )
